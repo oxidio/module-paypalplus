@@ -1,5 +1,8 @@
 {
-  "name": "oxid-esales/paypalplus-module",
+  "name": "oxidio/module-paypalplus",
+  "replace": {
+    "oxid-esales/paypalplus-module": "self.version"
+  },
   "description": "PayPal Plus payments module for OXID eShop",
   "type": "oxideshop-module",
   "keywords": ["oxid", "modules", "eShop"],
