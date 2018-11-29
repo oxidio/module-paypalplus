@@ -11,12 +11,11 @@
   "extra": {
     "oxideshop": {
       "blacklist-filter": [
-        "documentation/**/*.*"
+        "docs/**/*.*"
       ],
       "target-directory": "payp/paypalplus"
     }
   },
-  "version":  "3.0.1",
   "require": {
     "php": ">=5.6",
     "lib-curl": ">=7.26.0",
@@ -30,7 +29,7 @@
   },
   "autoload": {
     "psr-4": {
-      "OxidEsales\\PayPalPlus\\": "../../../source/modules/payp/paypalplus"
+      "OxidEsales\\PayPalPlus\\": "./"
     }
   }
 }
