@@ -1,0 +1,11 @@
+[{assign var="sPayPalPlusMethodId" value=$oViewConf->getPayPalPlusMethodId()}]
+[{if $sPaymentID eq $sPayPalPlusMethodId and $oViewConf->isPayPalPlusActive()}]
+    [{$smarty.block.parent}]
+    [{if $oViewConf->isPayPalPlusAvailable()}]
+        [{oxid_include_widget cl="paypPayPalPlusWall"}]
+    [{else}]
+        <p>[{oxmultilang ident="PAYP_PAYPALPLUS_ERROR_NOPAYMENT"}]</p>
+    [{/if}]
+[{else}]
+[{$smarty.block.parent}]
+[{/if}]

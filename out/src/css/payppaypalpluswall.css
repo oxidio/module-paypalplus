@@ -1,0 +1,109 @@
+/* PAYP PayPal Plus wall widget styles */
+
+#paypPayPalPlusLoading {
+    background: #FFFFFF url("../../../../../../out/azure/img/loading.gif") no-repeat 50% 50%;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.paypPayPalPlus.inactive {
+    pointer-events: none;
+    cursor: default;
+}
+
+.payppaypalpui-paymentinstructions {
+    color: #8E8E8E;
+}
+
+.payppaypalpui-paymentinstructions .header {
+    font-size: 1.1em;
+}
+
+.payppaypalpui-paymentinstructions .container {
+    font: 100%/1.618 sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 5px 0 15px 0;
+    padding: 25px 200px 25px 200px;
+    border: 1px solid #dde0e1;
+}
+
+.payppaypalpui-paymentinstructions .container .top {
+    font-size: 1.8em;
+    font-weight: 100;
+    text-align: center;
+}
+
+.payppaypalpui-paymentinstructions .container .top .amount {
+    position: relative;
+    top: -0.7em;
+}
+
+.payppaypalpui-paymentinstructions .container .top .paypal-logo {
+    position: relative;
+    top: -0.4em;
+}
+
+.payppaypalpui-paymentinstructions .container .calendar {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+}
+
+.payppaypalpui-paymentinstructions .container .middle {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 25px 0 25px 0;
+    font-weight: bold;
+}
+
+.payppaypalpui-paymentinstructions .term {
+    clear: both;
+    font-size: 0.9em;
+}
+
+.payppaypalpui-paymentinstructions ul {
+    margin: 0;
+}
+
+.payppaypalpui-paymentinstructions ul li {
+    list-style: none;
+    border-top: 1px solid #dde0e1;
+    line-height: 1.6em;
+}
+
+.payppaypalpui-paymentinstructions ul li:last-of-type {
+    border-top: 1px solid #dde0e1;
+    border-bottom: 1px solid #dde0e1;
+}
+
+.payppaypalpui-paymentinstructions ul li label {
+    display: inline-block;
+    width: 255px;
+}
+
+.payppaypalpui-paymentinstructions .bold {
+    font-weight: bold;
+}
+
+.payppaypalpui-paymentinstructions .container .description {
+    margin-top: 25px;
+    font-size: 0.9em;
+}
+
+.payppaypalpui-paymentinstructions a.print-payment-instructions {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 0;
+    right: -170px;
+}
+
+.payment dt .desc {
+    margin-left: 25px;
+    font-weight:normal;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "oxid-esales/paypalplus-module",
+  "description": "PayPal Plus payments module for OXID eShop",
+  "type": "oxideshop-module",
+  "keywords": ["oxid", "modules", "eShop"],
+  "homepage": "https://www.paypal.com",
+  "license": [
+    "GPL-3.0",
+    "proprietary"
+  ],
+  "extra": {
+    "oxideshop": {
+      "blacklist-filter": [
+        "documentation/**/*.*"
+      ],
+      "target-directory": "payp/paypalplus"
+    }
+  },
+  "version":  "3.0.1",
+  "require": {
+    "php": ">=5.6",
+    "lib-curl": ">=7.26.0",
+    "lib-openssl": ">=1.0.1",
+    "ext-curl": "*",
+    "ext-openssl": "*",
+    "paypal/rest-api-sdk-php": "^v1.13.0"
+  },
+  "config":{
+    "optimize-autoloader": true
+  },
+  "autoload": {
+    "psr-4": {
+      "OxidEsales\\PayPalPlus\\": "../../../source/modules/payp/paypalplus"
+    }
+  }
+}

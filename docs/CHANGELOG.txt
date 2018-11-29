@@ -1,0 +1,142 @@
+PayPal Plus changelog
+=====================
+
+v3.0.3
+------
+- Integrated the BN Code Oxid_Cart_6Cart_Plus (PayPal-Partner-Attribution-Id)
+
+v3.0.2
+------
+- Updated documentation: fixed module version
+
+v3.0.1
+------
+- Updated PayPal PHP SDK to version 1.13.0
+- Updated documentation: module version
+- Fixed error message not translated in admin backend
+
+v3.0.0
+------
+- Upgraded the Paypal Plus module to PHP 5.6
+- Module UTF-8 encoded
+- Minimal port of the PayPal Plus module for the OXID eShop 6.0v
+- Updated documentation: module version
+
+v2.0.5
+------
+- Fixed backend incompatibility with oepaypal
+- Added billing address to the patch call
+
+v2.0.4
+------
+- Fixed bug #6455 (https://bugs.oxid-esales.com/view.php?id=6455)
+- Fixed bug #6480 (https://bugs.oxid-esales.com/view.php?id=6480)
+- Changed defaults for experience profile handler
+
+v2.0.3
+------
+- Introduced Caching for Access Token
+- Made PayPal Plus compatible with flow theme
+
+v2.0.2
+------
+- Fixed paypPayPalPlusOxViewConfig.getShop() -> paypPayPalPlusOxViewConfig.getPayPalPlusShop()
+  (https://bugs.oxid-esales.com/view.php?id=6179)
+
+v2.0.1
+------
+- Fixed pending payment for webhooks
+- Added PayPal experience profile
+- Added support for OXID mobile theme
+- Added migrate.sql to migrate from oxps PayPal Plus module to payp PayPal Plus module
+
+v1.0.8
+------
+- Added "PayPal Upon Invoice" functionality
+- Fixed bug: order was not marked as paid after checkout
+- Added module settings option: Transmit order number as "invoice number" to PayPal for further processing
+- Added module settings option: Refunds can be discounted off the order total
+- SaleId is now stored in table oxorder:oxtransid
+- Added "payment" column to eShop Admin -> Administer Orders -> Order list
+
+v1.0.7
+------
+- Updated Documentation: Sandbox Mode is not compatible with Internet Explorer < 11
+- Fixed JavaScript Bug in Firefox and Internet Explorer
+
+v1.0.6
+------
+- A order will not be set to paid, if the PayPal Plus transaction status is "pending"
+- A better error message is displayed on checkout step 3 on PayPal payment->execute errors
+- Trusted Shops Excellence fee is now transferred to PayPal as insurance fee
+- Bug fix: Encoding issues
+- Support multiple language codes
+- Update to PayPal Rest API SDK v1.5.0
+- Bug fix: Hovering the PayPal wall selects PayPal as payment provider
+
+v1.0.5
+------
+- Bug fixes: phone validation supports now E.123 format ONLY
+- First and last name were switched
+
+v1.0.4
+------
+- Bug fixes: phone validation
+
+v1.0.3
+------
+- Bug fixes: database collation
+- Add integration html validation
+- Phone number validation for PayPal payment methods
+
+v1.0.2
+------
+- Extended payment methods description in the PayPal Plus wall
+- Default language changed in PayPal Plus wall
+
+v1.0.1
+------
+- Bug fixes: Special characters encoding in non-UTF-8 shops fixed
+
+v1.0.0
+------
+- Additional module settings implemented
+- User manual added
+- Module prepared to release
+
+v0.2.1
+------
+- Module fully covered with unit tests
+- Complex methods refactored
+- Bug fixes
+
+v0.2.0
+------
+- PayPal Plus back end GUI
+  - PayPal Plus payment info overview
+  - Refund tools and history overview
+- Unit tests implemented for most of module classes
+- Some acceptance tests implemented
+- Updated PayPal PHP SDK to version 1.2.0
+- Refactoring and optimization of complex methods
+- Classes and methods comments adjusted and extended
+- Bug fixes
+
+v0.1.1
+------
+- A part of unit tests ans several acceptance tests implemented
+- Complex methods refactored
+- Classes and methods comments improved
+- Bug fixes
+
+v0.1.0
+------
+- Updated PayPal PHP SDK to version 0.16.0
+- Refactored custom "update" method in SDK model "Payment"
+- 3rd party payment methods added to PayPal Plus wall
+- Prices and taxes are assigned according with eShop price mode (B2B or B2C)
+- Bug fixes and small improvements done
+
+v0.0.1 beta
+-----------
+- Initial release: beta (test) version
