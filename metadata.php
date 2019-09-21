@@ -391,14 +391,14 @@ $aModule = array(
             'group'      => 'paypPayPalPlusOther',
             'name'       => 'paypPayPalPlusLogLevel',
             'type'       => 'select',
-            'constrains' => 'DEBUG|INFO|WARN|ERROR',
+            'constraints' => 'DEBUG|INFO|WARN|ERROR',
             'value'      => 'INFO',
         ),
         array(
             'group'      => 'paypPayPalPlusOther',
             'name'       => 'paypPayPalPlusValidation',
             'type'       => 'select',
-            'constrains' => 'log|strict|disabled',
+            'constraints' => 'log|strict|disabled',
             'value'      => 'log',
         ),
         array(
