@@ -12,6 +12,9 @@
     "proprietary"
   ],
   "extra": {
+    "branch-alias": {
+      "dev-master": "3.x-dev"
+    },
     "oxideshop": {
       "blacklist-filter": [
         "docs/**/*.*"
