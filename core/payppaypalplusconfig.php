@@ -393,6 +393,7 @@ class paypPayPalPlusConfig extends paypPayPalPlusSuperCfg
      */
     public function getModuleSetting($sKey, $mAlternativeValue = null)
     {
+        $mValue = null;
         if ($this->isMobile()) {
             $mValue = $this->getSetting($this->_sModuleSettingsPrefix . $this->_sMobilePrefix . $sKey);
         }
